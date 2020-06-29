@@ -27,6 +27,9 @@ public class BlogController {
         Date date=new Date();
         Blog blog=new Blog();
         blog.setDate(date);
+        User user=new User();
+        user.setUserID(2);
+        session.setAttribute("user",user);
         User user1=(User)session.getAttribute("user");//获取Po中的User对象
         int id=user1.getUserID();
         blog.setContext(request.getParameter("context"));
@@ -53,8 +56,8 @@ public class BlogController {
     //用于处理删除博客的请求
     @RequestMapping("deleteBlog")
     public String deleteBlog(HttpSession session){
-        session.setAttribute("id",6);
-        int id=(Integer)session.getAttribute("id");
+        session.setAttribute("id",9);
+        int id=(Integer)session.getAttribute("id");//传入要删除的博客id
         blogService.deleteBlogService(id);
         return "redirect:/input.jsp";
     }
@@ -66,8 +69,18 @@ public class BlogController {
     }
     //用于查找单个blog
     @RequestMapping("findsingleBlog")
-    public Blog findsingleBlog(Integer id){
+    public Blog findsingleBlog(Integer id,HttpSession session){
         Blog blog=blogService.selectBlogService(id);
         return blog;
     }
+
+    @RequestMapping("finduserblog")
+    public String finduserblog(HttpSession session){
+        //User user= (User) session.getAttribute("user");
+        //int uid=user.getUserID();
+        List<Blog> list=blogService.selectUserBlogByUserid(2);
+        session.setAttribute("userbloglist",list);
+        return "redirect:/selectBlog.jsp";
+    }
+
 }
