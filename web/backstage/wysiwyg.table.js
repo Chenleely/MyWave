@@ -7,8 +7,8 @@
 <meta name="generator" content="SilverStripe - http_3A/silverstripe.org" />
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 
-<link rel="shortcut icon" href="themes/klevermedia/images/favicon.ico" />
-<link type="text/css" rel="stylesheet" href="themes/klevermedia/css/style.css" media="all" />
+<link rel="shortcut icon" href="../themes/klevermedia/images/favicon.ico" />
+<link type="text/css" rel="stylesheet" href="../themes/klevermedia/css/style.css" media="all" />
 <!--[if IE 7]><link type="text/css" rel="stylesheet" href="themes/klevermedia/css/ie7.css" media="all" /><![endif]-->
 <!--[if IE 8]><link type="text/css" rel="stylesheet" href="themes/klevermedia/css/ie8.css" media="all"  /><![endif]-->
 
@@ -38,7 +38,7 @@
 <div id="content_page_feature">
     <div id="content_page_feature_container">   
         <div id="heading_image">	
-            <img src="themes/klevermedia/images/broken.png" alt="404 sorry the webpage your are looking for cannot be found" />
+            <img src="../themes/klevermedia/images/broken.png" alt="404 sorry the webpage your are looking for cannot be found" />
         </div>
         <div id="header_text">
             <p class="white">
@@ -68,7 +68,7 @@
 <div id="footer_container">
     	<div id="footer">
         	<div id="twitter">
-            	<a href="../../../www.twitter.com/leegrant87" rel="blank" title="Follow me on Twitter"><img src="themes/klevermedia/images/twitter.png" alt="Follow me on Twitter" /></a>
+            	<a href="../../../www.twitter.com/leegrant87" rel="blank" title="Follow me on Twitter"><img src="../themes/klevermedia/images/twitter.png" alt="Follow me on Twitter" /></a>
                 
                     <div class="twitter">
                     	
@@ -120,8 +120,8 @@
         	<p>Copyright 2013 © Klever media Essex web design // Company No. 07109652</p>
         </div>
     </div>
-    <script type="text/javascript" src="themes/klevermedia/js/jQuery.js"></script>
-    <script type="text/javascript" src="themes/klevermedia/js/twitterFeed.js"></script>
+    <script type="text/javascript" src="../themes/klevermedia/js/jQuery.js"></script>
+    <script type="text/javascript" src="../themes/klevermedia/js/twitterFeed.js"></script>
     <script type="text/javascript">
 	$(".twitter").getTwitter({
 		userName: "leegrant87",

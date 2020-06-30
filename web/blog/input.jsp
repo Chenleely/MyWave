@@ -15,8 +15,8 @@
 </head>
 <style type="text/css">
     img{
-        width: auto;
-        height: auto;
+        width: 300px;
+        height: 100px;
     }
 
     .button { /* 按钮美化 */
@@ -39,11 +39,11 @@
 </style>
 <body>
 <center>
-    <div style="background-image:url(images/2.png) ;height:300px;">
+    <div style="background-image:url(../backstage/images/2.png) ;height:250px;">
         <br><br>
         <h2 style="font-size: 60px;
 		color: #FFFFFF;
-		font-weight: 300;
+		font-weight: 100;
 		margin-bottom: 20px;
 		font-family: '宋体';
 		">
@@ -59,7 +59,7 @@
 			font-family:'宋体';
 			">返回</a>
     </div>
-    <div style="background-image:url(images/1.png);background-size: 100% 100%;">
+    <div style="background-image:url(../backstage/images/1.png);background-size: 100% 100%;">
         <!--
             作者：offline
             时间：2020-06-29
@@ -71,6 +71,9 @@
             <textarea name="context" rows="50" cols="100" style="font-weight: 700;font-size: 20px;" ></textarea>
             <br>
             <input type="submit" value="提交"  class="button"/>
+        </form>
+        <form action="${pageContext.request.contextPath}/index/selectUpdateBlog" method="post">
+            <input type="submit" value="修改" class="button"/>
         </form>
         <a href="#" style="
 			color:rgb(234, 240, 241);

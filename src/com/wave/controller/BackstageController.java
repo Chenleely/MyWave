@@ -25,14 +25,14 @@ public class BackstageController {
         String password=request.getParameter("password");
         if(username.equals("admin")&&password.equals("admin")){
             selectAllInfo(session);
-            return "redirect:/dashboard.jsp";
+            return "redirect:/backstage/dashboard.jsp";
         }
-        return "redirect:/index.jsp";
+        return "redirect:/backstage/index.jsp";
     }
     @RequestMapping("refreshData")
     public String refreshData(HttpSession session){
         selectAllInfo(session);
-        return "redirect:/dashboard.jsp";
+        return "redirect:/backstage/dashboard.jsp";
     }
     public void selectAllInfo(HttpSession session){
        List<Blog> blogs=backStageService.selectAllBlogsService();
@@ -46,11 +46,11 @@ public class BackstageController {
     @RequestMapping("selectinfo")
     public String selectInfo(HttpSession session){
         selectAllInfo(session);
-        return "redirect:/statistics.jsp";
+        return "redirect:/backstage/statistics.jsp";
     }
     @RequestMapping("selectuser")
     public String selectUser(HttpSession session){
         selectAllInfo(session);
-        return "redirect:/users.jsp";
+        return "redirect:/backstage/users.jsp";
     }
 }

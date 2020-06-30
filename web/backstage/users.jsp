@@ -10,6 +10,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html lang="">
 <head>
     <meta charset="utf-8">
@@ -127,7 +128,7 @@
             </ul>
         </li>-->
         <li><a href="statistics.jsp"><span class="icon">&#128202;</span>数据</a></li>
-        <li class="section"><a href="users.jsp"><span class="icon">&#128101;</span>用户<span class="pip">3</span></a></li>
+        <li class="section"><a href="users.jspl"><span class="icon">&#128101;</span>用户<span class="pip">3</span></a></li>
     </ul>
 </nav>
 
